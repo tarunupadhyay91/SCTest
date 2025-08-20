@@ -19,16 +19,24 @@ struct listingView: View {
         }
     }
     var body: some View {
-        TextField("Search here", text: $searchText)
-            .padding(20)
-            .font(.headline)
-        List(filteredItems){ user in
-            ListCell(name: user.name! , email: user.email!)
+        VStack {
+            List(filteredItems){ user in
+                if user.name == "Ervin Howell" {
+                    collectionListView()
+                }
+                else {
+                    ListCell(name: user.name! , email: user.email!)
+                }
+            }
+            .searchable(text: $searchText)
+            .onAppear{
+                
+                viewModelObj.fetchUser()
+            }
         }
-        .searchable(text: $searchText)
-        .onAppear{
-            viewModelObj.fetchUser()
-        }
+        .navigationTitle("Listing")
+        .navigationBarBackButtonHidden(true)
+        
     }
 }
 

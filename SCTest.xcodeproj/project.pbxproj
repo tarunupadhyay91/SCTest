@@ -23,15 +23,41 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8D18B3B02E4B0A1B006BD262 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8D8FFC972DE59491007DD4CA /* SCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8FFCA42DE59492007DD4CA /* SCTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8FFCAE2DE59492007DD4CA /* SCTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8DD039462E41F6A600176CF2 /* Exceptions for "SCTest" folder in "SCTest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8D8FFC962DE59491007DD4CA /* SCTest */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8D8FFC992DE59491007DD4CA /* SCTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8DD039462E41F6A600176CF2 /* Exceptions for "SCTest" folder in "SCTest" target */,
+			);
 			path = SCTest;
 			sourceTree = "<group>";
 		};
@@ -72,12 +98,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D18B3A22E4B0A1B006BD262 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D8FFC8E2DE59491007DD4CA = {
 			isa = PBXGroup;
 			children = (
 				8D8FFC992DE59491007DD4CA /* SCTest */,
 				8D8FFCA72DE59492007DD4CA /* SCTestTests */,
 				8D8FFCB12DE59492007DD4CA /* SCTestUITests */,
+				8D18B3A22E4B0A1B006BD262 /* Frameworks */,
 				8D8FFC982DE59491007DD4CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +136,7 @@
 				8D8FFC932DE59491007DD4CA /* Sources */,
 				8D8FFC942DE59491007DD4CA /* Frameworks */,
 				8D8FFC952DE59491007DD4CA /* Resources */,
+				8D18B3B02E4B0A1B006BD262 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +230,8 @@
 			);
 			mainGroup = 8D8FFC8E2DE59491007DD4CA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8D8FFC982DE59491007DD4CA /* Products */;
 			projectDirPath = "";
@@ -397,6 +434,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SCTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -424,6 +462,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SCTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

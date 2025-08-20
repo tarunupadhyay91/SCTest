@@ -7,12 +7,19 @@
 
 import SwiftUI
 
-struct GeometryExample: View {
+struct GeomertyExample: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geomety in
+            VStack {
+                Text("width:\(geomety.size.width)")
+                Text("width:\(geomety.size.height)")
+            }
+            .frame(width: geomety.size.width - 10,height: geomety.size.height - 10)
+            .background(Color.red)
+        }
     }
 }
 
 #Preview {
-    GeometryExample()
+    GeomertyExample()
 }

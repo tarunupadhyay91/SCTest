@@ -9,7 +9,12 @@ import SwiftUI
 
 struct GeomertyExample2: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geometry in
+            Circle()
+                .fill(Color.red)
+                .frame(width: 100, height: 100)
+                .position(x:geometry.size.width/2, y: geometry.size.height/2)
+        }
     }
 }
 

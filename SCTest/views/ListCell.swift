@@ -11,10 +11,11 @@ struct ListCell: View {
     var name:String
     var email:String
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Text(name)
-           // Text(email)
+            Text(email)
         }
+        .padding()
     }
 }
 

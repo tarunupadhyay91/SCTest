@@ -9,7 +9,15 @@ import SwiftUI
 
 struct collectionListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       // ScrollView (.vertical){
+            VStack(alignment: .leading) {
+                ForEach(0..<10) { item in
+                    ListCell(name: "dashdfg", email: "sfhsjfjh")
+                    
+                        
+                }
+            }
+      //  }
     }
 }
 
